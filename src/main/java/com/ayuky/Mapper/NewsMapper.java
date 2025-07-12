@@ -9,7 +9,7 @@ import java.util.List;
 public interface NewsMapper {
     int addNews(News news);
     int updateNews(News news);
-    int delNews(Long id);
+    int delNews(Integer id);
     List<News> getlistNews();
-    News getNewsById(Long id);
+    News getNewsById(Integer id);
 }

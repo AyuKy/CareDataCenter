@@ -11,13 +11,13 @@ import java.util.List;
 public class NewsService {
     @Autowired
     private NewsMapper newsMapper;
-    public List<News> getListNews() {
+    public List<News> getlistNews() {
         return newsMapper.getlistNews();
     }
-    public News getNewsById(Long id) {
+    public News getNewsById(Integer id) {
         return newsMapper.getNewsById(id);
     }
-    public boolean delNews(Long id) {
+    public boolean delNews(Integer id) {
         return newsMapper.delNews(id) > 0;
     }
     public boolean addNews(News news) {
